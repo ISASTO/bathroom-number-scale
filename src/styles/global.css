@@ -1013,6 +1013,113 @@ a {
 .site-footer p { margin: 0; }
 .site-footer a { color: #bbb9b3; font: 700 9px/1 ui-monospace, monospace; letter-spacing: 0.1em; text-decoration: none; text-transform: uppercase; }
 
+/* Desktop typography is intentionally more generous than the compact mobile UI. */
+@media (min-width: 921px) {
+  .wordmark b,
+  .kicker,
+  .stage-label,
+  .wizard-progress b,
+  .text-button {
+    font-size: 12px;
+  }
+
+  .masthead-meta,
+  .instrument-topline,
+  .instrument-footnote,
+  .axiom-strip span,
+  .polarity-legend,
+  .field-label,
+  .action-select-card > span,
+  .comparison-axis-labels,
+  .force-meter-labels,
+  .site-footer a {
+    font-size: 12px;
+  }
+
+  .terminal small,
+  .hero-axis__negative,
+  .hero-axis__positive,
+  .mirror-zero small,
+  .mirror-zero span,
+  .tab span,
+  .action-card__eyebrow,
+  .action-card__details dt,
+  .wizard-progress > span,
+  .wizard-progress i,
+  .formula-box span,
+  .action-select-card small,
+  .comparison-axis span,
+  .ledger-heading > div,
+  .net-result > small,
+  .mini-axis,
+  .local-notice span,
+  .site-footer > div span {
+    font-size: 11px;
+  }
+
+  .primary-button,
+  .secondary-button,
+  .formula-box code,
+  .method-note summary,
+  .about-section blockquote footer {
+    font-size: 14px;
+  }
+
+  .tab {
+    font-size: 13px;
+  }
+
+  .axiom-strip p,
+  .local-notice,
+  .action-card__comparison,
+  .field-error,
+  .field-note,
+  .formula-box small,
+  .ledger-line input,
+  .ledger-line select,
+  .equation-stack code,
+  .site-footer {
+    font-size: 14px;
+  }
+
+  .axiom-strip b,
+  .polarity-choice small,
+  .question-context,
+  .action-select-card select,
+  .empty-state p,
+  .net-result > p:not(.stage-label),
+  .method-note p,
+  .closed-scale-callout p:not(.stage-label) {
+    font-size: 15px;
+  }
+
+  .section-heading > p,
+  .theory-card > p:not(.stage-label) {
+    font-size: 16px;
+  }
+
+  .action-card__title-row strong {
+    font-size: 22px;
+  }
+
+  .action-card__details > p {
+    font-size: 17px;
+  }
+
+  .action-card__details dd {
+    font-size: 13px;
+  }
+
+  .axis-value span,
+  .interval-readout > span {
+    font-size: 14px;
+  }
+
+  .interval-readout b {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 920px) {
   .hero { min-height: auto; grid-template-columns: 1fr; padding-top: 70px; }
   .hero-copy { max-width: 720px; }
