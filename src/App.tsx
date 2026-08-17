@@ -57,31 +57,46 @@ function App() {
 
           <div className="hero-instrument" aria-label="Bathroom scale overview">
             <div className="instrument-topline">
-              <span>Polarity monitor</span>
-              <i>Live</i>
+              <span>Polarity calibration</span>
+              <i>Closed range</i>
             </div>
-            <div className="terminal terminal--negative">
-              <span>−6</span>
-              <div><small>Absolute terminus</small><strong>Universal perfect heaven</strong></div>
-            </div>
-            <div className="hero-axis">
-              <div className="hero-axis__negative">
-                <span>restoration</span><i /><i /><i />
+
+            <div className="polarity-calibration">
+              <div className="calibration-zones" aria-hidden="true">
+                <span className="calibration-zone calibration-zone--negative">← Restorative polarity</span>
+                <span className="calibration-zone calibration-zone--positive">Defiling polarity →</span>
               </div>
-              <div className="mirror-zero">
-                <small>neutral state</small>
-                <b>0</b>
-                <span>calm mirror-gazing</span>
+
+              <div className="calibration-track">
+                <div className="calibration-rail calibration-rail--negative" aria-hidden="true">
+                  <i /><i /><i /><i /><i /><i />
+                </div>
+                <div className="calibration-zero">
+                  <small>neutral state</small>
+                  <b>0</b>
+                  <span>calm mirror-gazing</span>
+                </div>
+                <div className="calibration-rail calibration-rail--positive" aria-hidden="true">
+                  <i /><i /><i /><i /><i /><i />
+                </div>
               </div>
-              <div className="hero-axis__positive">
-                <i /><i /><i /><span>defilement</span>
+
+              <div className="calibration-terminals">
+                <div className="calibration-terminal calibration-terminal--negative">
+                  <span>−6</span>
+                  <div><small>Restorative terminus</small><strong>Universal perfect heaven</strong></div>
+                </div>
+                <div className="calibration-terminal calibration-terminal--positive">
+                  <span>+6</span>
+                  <div><small>Defiling terminus</small><strong>Universal eternal hell</strong></div>
+                </div>
               </div>
             </div>
-            <div className="terminal terminal--positive">
-              <span>+6</span>
-              <div><small>Absolute terminus</small><strong>Universal eternal hell</strong></div>
+
+            <div className="instrument-note">
+              <span>Nonlinear magnitude</span>
+              <p>Equal spacing marks ordinal position only. Force escalates by right-associative powers of three.</p>
             </div>
-            <p className="instrument-footnote">Magnitude escalates by right-associative powers of three.</p>
           </div>
         </section>
 
